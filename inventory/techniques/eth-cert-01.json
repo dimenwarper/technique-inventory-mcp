@@ -1,0 +1,85 @@
+{
+  "title": "Numerical discovery followed by exact certificate replay",
+  "summary": "A practical recipe for converting numerical conjecture testing, SDP explorations, geometric inequalities, or combinatorial optimization into independently checkable statements.",
+  "content": "Use floating-point optimization only to propose a witness. Stereographic projection converts proposed unit vectors into exactly rational unit vectors, so their Gram matrix is positive semidefinite by construction. Verify the decisive objective inequality exactly. A complementary positive-definiteness checker uses fraction-free Bareiss elimination and checks exact divisions. The project stores nine exact Gram witnesses excluding its entire specified trace-2m diagonal certificate family for selected instances.",
+  "whenToUse": "A practical recipe for converting numerical conjecture testing, SDP explorations, geometric inequalities, or combinatorial optimization into independently checkable statements.",
+  "limitations": "An exact witness certifies only its stated inequality or certificate-family obstruction. It does not prove general computational hardness. The numeric search and the exact verifier should remain separate, with explicit failure when rationalization loses the needed margin.",
+  "tags": [
+    "certificates",
+    "optimization",
+    "rational arithmetic"
+  ],
+  "project": "ETH",
+  "kind": "workflow",
+  "evidence": {
+    "level": "experimental",
+    "details": "Implemented exact certificate workflow; saved independent replay evidence inspected, not rerun here.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: CERT-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_diagonal_probe.py",
+      "line": 54,
+      "sha256": "0189d859ba32ff5454229df5ccb95100bfadbbb8fbf3edc1452d3a1205ac2ed3"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_diagonal_probe.py",
+      "line": 82,
+      "sha256": "0189d859ba32ff5454229df5ccb95100bfadbbb8fbf3edc1452d3a1205ac2ed3"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_probe.py",
+      "line": 57,
+      "sha256": "179a2b8a9e000a099fd50501f823b232f1bb1341fe9358b5ce43be1e4deaebe0"
+    },
+    {
+      "project": "ETH",
+      "path": "ROUND2.txt",
+      "line": 210,
+      "sha256": "1e5c5836ad18c40dd905b2fe5e82b6196b5e139f1a16f37175905fc45558ec0e"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_diagonal_probe.py",
+      "sha256": "0189d859ba32ff5454229df5ccb95100bfadbbb8fbf3edc1452d3a1205ac2ed3",
+      "note": "Artifact symbol: rational_unit_vectors"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_diagonal_probe.py",
+      "sha256": "0189d859ba32ff5454229df5ccb95100bfadbbb8fbf3edc1452d3a1205ac2ed3",
+      "note": "Artifact symbol: replay_obstruction"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_probe.py",
+      "sha256": "179a2b8a9e000a099fd50501f823b232f1bb1341fe9358b5ce43be1e4deaebe0",
+      "note": "Artifact symbol: exact_positive_definite"
+    },
+    {
+      "project": "ETH",
+      "path": "spectral_diagonal_independent_replay.json",
+      "sha256": "1b71c1330ee099edf8d38d88ed7fdd79c2fe13a2a934ffee1ae9940fec18e3a7",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Package the rational-witness format and replay verifier independently of the original NAE matrix construction.",
+  "relatedIds": [
+    "eth-alg-01",
+    "eth-search-01",
+    "eth-search-02"
+  ],
+  "status": "active",
+  "id": "eth-cert-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

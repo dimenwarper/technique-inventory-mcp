@@ -1,0 +1,70 @@
+{
+  "title": "Express sparse affine conditioning through permanent deletion minors",
+  "summary": "A concrete example of a parameterized conditioning extension: use an existing permanent algorithm on deletion-closed families to evaluate restricted modular counts.",
+  "content": "For signed cubic-regular NAE incidence with n variables and n clauses, the mod-three Walsh coefficient of even syndrome weight t is a sum of ordinary deletion-minor permanents with at most B(n,t)=sum_(a=0..t/2) binom(t,a)*3^a*binom(n-t,t/2-a) candidate terms. Weight two has n+4 candidates; odd weights vanish. Affine equations follow by Fourier expansion after row reduction. If the total hash support has t0 coordinates, the reduction uses 2^O(t0*log(1+n/t0)) minor calls including generation.",
+  "whenToUse": "A concrete example of a parameterized conditioning extension: use an existing permanent algorithm on deletion-closed families to evaluate restricted modular counts.",
+  "limitations": "The deletion-minor theorem needs cubic-regular incidence and distinct variables in each clause. The minors may cease to be regular. The supplied permanent engine is exponential; arbitrary dense conditioning remains expensive. Small total hash support does not always break modular cancellation.",
+  "tags": [
+    "permanents",
+    "modular counting",
+    "Fourier coefficients",
+    "parameterized algorithms"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "experimental",
+    "details": "Written exact reduction and implementation; full script rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: continuation_permanent_hash.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"general_nonregular_walsh_checks\":2550,\"pointwise_identity_checks\":4032,\"parity_polynomial_walsh_checks\":4032,\"deletion_minor_walsh_checks\":1835,\"affine_hash_bucket_checks\":504}. Complete saved result: continuation_permanent_hash_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: COMB-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash_notes.txt",
+      "line": 77,
+      "sha256": "e71338331954e30449f3b837c6a2b64aa73b371bb4fde9bc256861720c280b0c"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash_notes.txt",
+      "line": 124,
+      "sha256": "e71338331954e30449f3b837c6a2b64aa73b371bb4fde9bc256861720c280b0c"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash_notes.txt",
+      "line": 170,
+      "sha256": "e71338331954e30449f3b837c6a2b64aa73b371bb4fde9bc256861720c280b0c"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash.py",
+      "sha256": "a7c7ad820cdbc4b4f5e7d68526aaae37473becdb008d496a71670c555079d5e3",
+      "note": "Artifact symbol: walsh_by_minors"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash.py",
+      "sha256": "a7c7ad820cdbc4b4f5e7d68526aaae37473becdb008d496a71670c555079d5e3",
+      "note": "Artifact symbol: hash_bucket_mod3"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_permanent_hash.py",
+      "sha256": "a7c7ad820cdbc4b4f5e7d68526aaae37473becdb008d496a71670c555079d5e3",
+      "note": "Artifact symbol: independent_equations"
+    }
+  ],
+  "nextSteps": "Identify permanent families closed under the required row/column deletions and test the conditioning reduction there.",
+  "relatedIds": [],
+  "status": "active",
+  "id": "eth-comb-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

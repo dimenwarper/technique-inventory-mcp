@@ -1,0 +1,22 @@
+{
+  "id": "example-exact-replay",
+  "title": "Replay proposed witnesses with exact arithmetic",
+  "summary": "Discover a candidate numerically, then verify a rational witness exactly.",
+  "content": "Convert a proposed witness to rational data while preserving its required constraints, then check the decisive inequality using exact arithmetic.",
+  "whenToUse": "An optimization experiment needs an independently checkable certificate.",
+  "limitations": "A successful certificate proves only the checked claim. Failure to find one does not prove impossibility.",
+  "tags": ["certificates", "exact arithmetic"],
+  "project": "example",
+  "kind": "technique",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Illustrative template. Replace this with actual evidence."
+  },
+  "sources": [{ "note": "Replace with source references for your own work." }],
+  "nextSteps": "Attach a small independently replayable witness.",
+  "relatedIds": [],
+  "status": "active",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

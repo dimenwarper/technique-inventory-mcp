@@ -1,0 +1,67 @@
+{
+  "title": "Canonicalize finite-field trace phases with Frobenius orbits",
+  "summary": "Provides canonical simplification for Boolean trace functions, additive-character sums, coding constructions, and comparison of finite-field phase representations.",
+  "content": "For Tr_F(2^N)/F2(f(x)), rotate positive exponents by doubling modulo 2^N-1, move coefficients by the matching Frobenius power, and combine each orbit. Short orbits require a relative trace followed by a trace-one lift back to the ambient field. Positive multiples of 2^N-1 must not be replaced by exponent zero. For Boolean cubics, the sharp maximum least exponent among the relevant necklaces is 1+2^floor(N/3)+2^floor(2N/3).",
+  "whenToUse": "Provides canonical simplification for Boolean trace functions, additive-character sums, coding constructions, and comparison of finite-field phase representations.",
+  "limitations": "Equality is of traces on the chosen field, not geometric equivalence of curves or equality on all extension fields. The degree bound is still exponential and does not imply hardness. The current BinaryField helper enumerates small fields for verification; a scalable implementation must use polynomial-time field/linear-algebra routines described in the notes.",
+  "tags": [
+    "finite fields",
+    "Boolean functions",
+    "trace polynomials",
+    "canonical forms"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "experimental",
+    "details": "Written derivation and implementation; full script rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: curve_tower_round10.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"general_pointwise_trace_checks\":10220,\"cubic_pointwise_trace_checks\":6120,\"short_orbit_counterexample\":{\"field_bits\":4,\"modulus\":19,\"exponent\":5,\"orbit_length\":2,\"trace_one_lift\":2,\"correct_truth_weight\":10,\"naive_truth_weight\":0},\"norm_hyperplane_restrictions\":[{\"ambient_bits\":3,\"subfield_bits\":1,\"hyperplane_binary_codimension\":1,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":6,\"subfield_bits\":2,\"hyperplane_binary_codimension\":2,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":9,\"subfield_bits\":3,\"hyperplane_binary_codimension\":3,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128}]}. Complete saved result: curve_tower_round10_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: ALG-04. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 30,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 77,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: canonical_trace_polynomial"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: relative_trace_one"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: necklace_maximum"
+    }
+  ],
+  "nextSteps": "Extract the canonicalizer and retain the F16 short-orbit example: the correct phase has truth weight 10, while a naive lift makes it identically zero.",
+  "relatedIds": [
+    "eth-alg-05",
+    "eth-prob-01"
+  ],
+  "status": "active",
+  "id": "eth-alg-04",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

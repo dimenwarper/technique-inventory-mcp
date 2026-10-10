@@ -1,0 +1,54 @@
+{
+  "title": "Cubic norm phases become quadratic on subfield hyperplanes",
+  "summary": "A concrete structured higher-degree family for exact exponential sums, finite-field Boolean functions, and simulation benchmarks.",
+  "content": "For E/K of degree three in characteristic two, Tr_K/F2(c*Norm_E/K(x)) restricted to any K-affine hyperplane is Boolean quadratic. On that hyperplane x=u+v*s+w*t; every degree-three monomial in s,t is a product of two binary-linear expressions because squaring is binary linear. Recover its quadratic coefficients with O(N^2) evaluations, then apply Gauss elimination. Adding a Boolean quadratic or fourth-root stabilizer phase and further binary affine equations preserves this tractability. Partitioning all inputs into such hyperplanes gives O*(2^(N/3)) evaluation for norm plus quadratic phase.",
+  "whenToUse": "A concrete structured higher-degree family for exact exponential sums, finite-field Boolean functions, and simulation benchmarks.",
+  "limitations": "This is a special cubic family, not arbitrary cubic contraction. A partial binary hash need not determine a full subfield-linear value. Padding with free coordinates does not automatically provide a cheaper rank dictionary; see META-01.",
+  "tags": [
+    "structured exponential sums",
+    "subfields",
+    "quadratic reduction"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "proof",
+    "details": "Written proof and exact small-field checks; checks rerun as part of the tower script.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: curve_tower_round10.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"general_pointwise_trace_checks\":10220,\"cubic_pointwise_trace_checks\":6120,\"short_orbit_counterexample\":{\"field_bits\":4,\"modulus\":19,\"exponent\":5,\"orbit_length\":2,\"trace_one_lift\":2,\"correct_truth_weight\":10,\"naive_truth_weight\":0},\"norm_hyperplane_restrictions\":[{\"ambient_bits\":3,\"subfield_bits\":1,\"hyperplane_binary_codimension\":1,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":6,\"subfield_bits\":2,\"hyperplane_binary_codimension\":2,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":9,\"subfield_bits\":3,\"hyperplane_binary_codimension\":3,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128}]}. Complete saved result: curve_tower_round10_results.json.\n\nRecorded survey replay: finite_field_gauss_round8.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"gauss_brute_checks\":880,\"pullback_brute_checks\":280,\"benchmark\":{\"variables\":512,\"affine_rows\":128,\"input_phase_terms\":16752,\"field_size\":9,\"answer_encoding\":2}}. Complete saved result: finite_field_gauss_round8_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: ALG-05. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 155,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: norm_hyperplane_checks"
+    },
+    {
+      "project": "ETH",
+      "path": "finite_field_gauss_round8.py",
+      "sha256": "9a8b9c2f205ca76ca7abf8508f429f6889a8de449f85ef3315a30e28bf5bf002",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Implement coefficient recovery without truth-table enumeration and compare this family with other higher-degree phases that become quadratic under structured restrictions.",
+  "relatedIds": [
+    "eth-alg-04",
+    "eth-prob-01"
+  ],
+  "status": "active",
+  "id": "eth-alg-05",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

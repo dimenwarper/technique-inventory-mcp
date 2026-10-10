@@ -1,0 +1,59 @@
+{
+  "title": "Exact moment-transfer bounds for entropy",
+  "summary": "Rational transfer DP plus a globally valid polynomial logarithm bound certifies a local KL estimate on simple paths/cycles.",
+  "content": "Rational transfer DP plus a globally valid polynomial logarithm bound certifies a local KL estimate on simple paths/cycles. Useful for rigorous probability and analytic inequalities. The later multigraph audit suspended the proposed PPSZ runtime consequence; preserve the local lemma with its domain.",
+  "whenToUse": "Bounding analytic or probabilistic quantities with exactly computable finite moments.",
+  "limitations": "The local KL statement is limited to its audited simple-path/cycle domain. Its proposed PPSZ runtime consequence is suspended by the multigraph counterexample.",
+  "tags": [
+    "entropy",
+    "exact moments",
+    "rational arithmetic"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-01. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "kl_transfer_audit_notes.txt",
+      "line": 3,
+      "sha256": "4fdbc9ebb6281bdbea4df0482dd9e4f6b4904f9c39fb5031c05e8d7cf09c33df"
+    },
+    {
+      "project": "ETH",
+      "path": "kl_transfer_audit_notes.txt",
+      "line": 33,
+      "sha256": "4fdbc9ebb6281bdbea4df0482dd9e4f6b4904f9c39fb5031c05e8d7cf09c33df"
+    },
+    {
+      "project": "ETH",
+      "path": "kl_transfer_probe.py",
+      "sha256": "c3bf3326c85ba36ba4fc07b518b6ff931e9555ba3dd2a641403343f084cfd09e",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "kl_transfer_audit.py",
+      "sha256": "38076dbe33446ef05e3d8f229069215e87452ad53bb6f605f97f3255470ff10e",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-cert-01"
+  ],
+  "status": "active",
+  "id": "eth-extra-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

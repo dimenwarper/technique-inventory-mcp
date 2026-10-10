@@ -1,0 +1,73 @@
+{
+  "title": "Exact modular quadratic-mask probabilities and black-box query limits",
+  "summary": "Useful benchmarks for modular sketches, polynomial-evaluation codes, phase masking, and proposed derandomization or anticoncentration claims.",
+  "content": "For uniform Boolean quadratic Q and Z=sum_(x in S)(-1)^Q(x) modulo 3, detection probability is (2/3)*(1-(-1/2)^|S|) for 1<=|S|<=7 and for eight-point sets other than affine three-cubes. An affine three-cube has probability 29/64. An alternating-matrix rank recurrence computes the exact probability on every affine d-space; d=5 gives 14509/32768. Separately, K arbitrary F9-valued masks on an N-point universe miss some nonempty subset whenever 4K<N; the F3 threshold is 2K<N. Both are sharp for arbitrary masks.",
+  "whenToUse": "Useful benchmarks for modular sketches, polynomial-evaluation codes, phase masking, and proposed derandomization or anticoncentration claims.",
+  "limitations": "No uniform random-detection bound for all subsets is proved. The deterministic lower bound is for arbitrary hidden subsets and black-box queries, not algorithms exploiting succinct input structure. These statements do not provide a fast evaluator.",
+  "tags": [
+    "randomized sketches",
+    "anticoncentration",
+    "quadratic functions",
+    "zero sums"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "proof",
+    "details": "Written proofs and exhaustive saved small-case census; affine probabilities through dimension six rechecked during survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: PROB-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.txt",
+      "line": 30,
+      "sha256": "88bb8802bafeb2ce7f1dc33f390df93efca3263d5036f678eb86f04b686dc6d2"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.txt",
+      "line": 77,
+      "sha256": "88bb8802bafeb2ce7f1dc33f390df93efca3263d5036f678eb86f04b686dc6d2"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.txt",
+      "line": 112,
+      "sha256": "88bb8802bafeb2ce7f1dc33f390df93efca3263d5036f678eb86f04b686dc6d2"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.py",
+      "sha256": "d0a9f09e1a06bd2032cf9c8465c12f0aac018a140b4c90b7ab85019dbd2ab004",
+      "note": "Artifact symbol: affine_probabilities"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.py",
+      "sha256": "d0a9f09e1a06bd2032cf9c8465c12f0aac018a140b4c90b7ab85019dbd2ab004",
+      "note": "Artifact symbol: indicator_census"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_quadratic_mask.py",
+      "sha256": "d0a9f09e1a06bd2032cf9c8465c12f0aac018a140b4c90b7ab85019dbd2ab004",
+      "note": "Artifact symbol: zero_sum_checks"
+    }
+  ],
+  "nextSteps": "Build a benchmark corpus for modular detection that includes affine cubes and the sharp zero-sum examples.",
+  "relatedIds": [
+    "eth-alg-04",
+    "eth-alg-05"
+  ],
+  "status": "active",
+  "id": "eth-prob-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

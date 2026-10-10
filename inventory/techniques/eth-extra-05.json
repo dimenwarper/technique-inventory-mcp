@@ -1,0 +1,48 @@
+{
+  "title": "Full linear span does not settle sparse representability",
+  "summary": "The disjoint packet dictionary spans its whole 25-dimensional common space and the target has a nine-packet expression, yet no two-packet expression exists.",
+  "content": "The disjoint packet dictionary spans its whole 25-dimensional common space and the target has a nine-packet expression, yet no two-packet expression exists. This is an exact reason to stop searching for a linear separating functional for that obstruction. Nine is an upper bound, not a claimed minimum.",
+  "whenToUse": "Checking whether a linear separating functional can possibly certify a sparse-representation obstruction.",
+  "limitations": "This is a dictionary-specific finite example. Nine is an upper bound on packet count, not an established minimum.",
+  "tags": [
+    "sparse representations",
+    "linear span",
+    "counterexamples"
+  ],
+  "project": "ETH",
+  "kind": "counterexample",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-05. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-05. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_span_notes.txt",
+      "line": 9,
+      "sha256": "1946878b46fd9dfed6aefc9635e1d417ecc8a5c17904c7cd4f970409f03621c9"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_span_check.py",
+      "sha256": "a90497d4be2d9b7bf629e458cb4577d9626204f98e517bbb64abf612eb568267",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-search-01",
+    "eth-search-02"
+  ],
+  "status": "active",
+  "id": "eth-extra-05",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

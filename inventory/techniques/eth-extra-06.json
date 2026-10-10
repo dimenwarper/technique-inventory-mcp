@@ -1,0 +1,48 @@
+{
+  "title": "Separate support choices from sign choices in real phase searches",
+  "summary": "For an order-three action on real quadratic phases on the full binary label space, the binary averaging projection splits invariant and noninvariant parts.",
+  "content": "For an order-three action on real quadratic phases on the full binary label space, the binary averaging projection splits invariant and noninvariant parts. In the stated characteristic-three norm formula, support depends on the noninvariant component and surviving signs on the invariant component. Enumerate support choices first and solve remaining sign constraints linearly.",
+  "whenToUse": "Searching real quadratic phases under the stated order-three action by separating support from signs.",
+  "limitations": "The decomposition uses the stated binary averaging action and characteristic-three norm formula. It is not asserted for arbitrary phase families or group actions.",
+  "tags": [
+    "phase search",
+    "support geometry",
+    "symmetry"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-06. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-06. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_real_reduction_notes.txt",
+      "line": 42,
+      "sha256": "367f5e9023238039262092eebcd0dda7e347400f69f401e4a190a3ec49a7e9ad"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_real_reduction.py",
+      "sha256": "5af1cf5033a03d350cfc965d754377057bf51fc733ec97b258660e4b2dd9d4a8",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-search-02",
+    "eth-alg-03"
+  ],
+  "status": "active",
+  "id": "eth-extra-06",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

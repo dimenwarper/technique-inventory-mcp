@@ -1,0 +1,74 @@
+{
+  "title": "Audit closure under restrictions before adopting a tractable representation",
+  "summary": "A reusable test for proposed algorithms: enumerate required restrictions/compositions, then prove that the representation stays tractable. A transverse slice can show that a proposed enlargement adds no expressive advantage on a padded target.",
+  "content": "An invertible triangular quadratic permutation pi(u,v)=(u,v+F(u)) gives a cubic Maiorana-McFarland phase with easy complete Walsh coefficients. Yet fixing a=0 and v=0 leaves sum_(u,b)(-1)^(b.F(u))=2^m*#{u:F(u)=0}; parsimonious quadratic gadgets encode SAT counting. Thus easy complete sums need not survive affine input restrictions. Separately, if every atom in an enriched padded dictionary becomes a stabilizer on every fiber of one common hash family, a hash transverse to the padding can pull any decomposition back to ordinary stabilizers. Under the notes' collision bound the enriched rank is at least the old rank, and equals it when the reverse dictionary inclusion holds.",
+  "whenToUse": "A reusable test for proposed algorithms: enumerate required restrictions/compositions, then prove that the representation stays tractable. A transverse slice can show that a proposed enlargement adds no expressive advantage on a padded target.",
+  "limitations": "The rank theorem assumes a common hash family, sufficient padding, and the stated collision bound; equality also needs dictionary inclusion. It does not cover incompatible atom coordinates or arbitrary tractable families. Existence of a transversal is not an efficient construction: uniform sampling can be exponentially unlikely to find one.",
+  "tags": [
+    "algorithm design",
+    "closure",
+    "rank obstructions",
+    "counterexamples"
+  ],
+  "project": "ETH",
+  "kind": "counterexample",
+  "evidence": {
+    "level": "experimental",
+    "details": "Two written exact results; common-hash graph-slice checks rerun in the tower script.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: curve_tower_round10.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"general_pointwise_trace_checks\":10220,\"cubic_pointwise_trace_checks\":6120,\"short_orbit_counterexample\":{\"field_bits\":4,\"modulus\":19,\"exponent\":5,\"orbit_length\":2,\"trace_one_lift\":2,\"correct_truth_weight\":10,\"naive_truth_weight\":0},\"norm_hyperplane_restrictions\":[{\"ambient_bits\":3,\"subfield_bits\":1,\"hyperplane_binary_codimension\":1,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":6,\"subfield_bits\":2,\"hyperplane_binary_codimension\":2,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128},{\"ambient_bits\":9,\"subfield_bits\":3,\"hyperplane_binary_codimension\":3,\"quadratic_hyperplanes_checked\":16,\"further_binary_affine_gauss_checks\":128}]}. Complete saved result: curve_tower_round10_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: META-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "curve_phase_round10.txt",
+      "line": 118,
+      "sha256": "c8da8783fb824a9a702ea95a26ab1b96134b617897ce2f472cff8b9ea53bbd8d"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 344,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 333,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_phase_round10.py",
+      "sha256": "477962423345638df78f4db639f6131147b401cc8486fc75b0aef23d8946d4cb",
+      "note": "Artifact symbol: mm_checks"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_phase_round10.py",
+      "sha256": "477962423345638df78f4db639f6131147b401cc8486fc75b0aef23d8946d4cb",
+      "note": "Artifact symbol: sat_quadratization_checks"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: padded_rank_transversal_checks"
+    }
+  ],
+  "nextSteps": "Use these as standard positive/negative controls when evaluating a new compact representation or atom dictionary.",
+  "relatedIds": [
+    "eth-struct-01",
+    "eth-tensor-01",
+    "eth-tensor-02"
+  ],
+  "status": "active",
+  "id": "eth-meta-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Subfield-restricted inverse phases as low-genus character sums",
+  "summary": "On scalar subfield lines, relative trace turns inverse phases into rational functions with explicitly controlled simple poles.",
+  "content": "On scalar subfield lines, relative trace turns inverse phases into rational functions with explicitly controlled simple poles. Combine coincident residues, retain excluded input points even when their poles cancel, and include infinity corrections. This gives useful algebraic models; the probes are not fast general point-counting implementations.",
+  "whenToUse": "Rewriting inverse phases restricted to scalar subfield lines as rational character sums.",
+  "limitations": "Retain excluded input points after pole cancellation and account for infinity. These probes are not fast general point-counting implementations.",
+  "tags": [
+    "finite fields",
+    "character sums",
+    "algebraic curves"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-03. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-03. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "curve_phase_round10.txt",
+      "line": 45,
+      "sha256": "c8da8783fb824a9a702ea95a26ab1b96134b617897ce2f472cff8b9ea53bbd8d"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.txt",
+      "line": 187,
+      "sha256": "deb4ce3bd530d276036e7777a7349970bb24f59903cd3328047cbabf898bc12c"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_tower_round10.py",
+      "sha256": "d43c1a6b7bfc678f40b607cae2dcf48e8beb4f5379efdbb243d2329574146951",
+      "note": "Artifact symbol: subfield_restriction"
+    },
+    {
+      "project": "ETH",
+      "path": "curve_phase_round10.py",
+      "sha256": "477962423345638df78f4db639f6131147b401cc8486fc75b0aef23d8946d4cb",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-alg-04",
+    "eth-alg-05"
+  ],
+  "status": "active",
+  "id": "eth-extra-03",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

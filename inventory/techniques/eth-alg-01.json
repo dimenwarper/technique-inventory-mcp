@@ -1,0 +1,80 @@
+{
+  "title": "Exact affine and fourth-root quadratic phase contraction",
+  "summary": "Useful for exact quantum-circuit simulation, modular weighted constraint problems, code enumerators, signed partition functions, and Boolean Fourier calculations.",
+  "content": "Evaluate sum i^Q(x) under binary affine constraints when Q=c+sum a_j x_j+2 sum b_jk x_j x_k modulo 4, over an odd-characteristic field containing i. Affine substitution preserves the phase class; odd linear terms are eliminated using sum_x i^(a*x+2*x*L)=(1+i^a)i^(-a*L). Ordinary binary Gauss elimination finishes the calculation while retaining signs and phases. The pullback API also handles affine-supported stabilizer functions without introducing multiplicity.",
+  "whenToUse": "Useful for exact quantum-circuit simulation, modular weighted constraint problems, code enumerators, signed partition functions, and Boolean Fourier calculations.",
+  "limitations": "The kernel handles this quadratic phase class, not arbitrary nonlinear inputs. Straightforward affine substitution can take O(N^4) operations. Current Field helpers use small explicit field tables; the demonstrated implementation is not optimized for growing characteristic.",
+  "tags": [
+    "Gauss sums",
+    "Boolean Fourier analysis",
+    "finite fields",
+    "simulation"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "experimental",
+    "details": "Written derivation and reference implementation; full script rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: finite_field_gauss_round8.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"gauss_brute_checks\":880,\"pullback_brute_checks\":280,\"benchmark\":{\"variables\":512,\"affine_rows\":128,\"input_phase_terms\":16752,\"field_size\":9,\"answer_encoding\":2}}. Complete saved result: finite_field_gauss_round8_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: ALG-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "modular_rank_round8_notes.txt",
+      "line": 42,
+      "sha256": "d304fd208bd7b0310a5c9d0b89fe8bb7c494f5c973ed90d99756f89e07c5d80d"
+    },
+    {
+      "project": "ETH",
+      "path": "finite_field_gauss_round8.py",
+      "line": 72,
+      "sha256": "9a8b9c2f205ca76ca7abf8508f429f6889a8de449f85ef3315a30e28bf5bf002"
+    },
+    {
+      "project": "ETH",
+      "path": "symbolic_elimination_round6_notes.txt",
+      "line": 7,
+      "sha256": "63904f4525cf413a47a772c91340b72362d814ef085fc3b78e062482eff7508b"
+    },
+    {
+      "project": "ETH",
+      "path": "finite_field_gauss_round8.py",
+      "sha256": "9a8b9c2f205ca76ca7abf8508f429f6889a8de449f85ef3315a30e28bf5bf002",
+      "note": "Artifact symbol: fourth_root_gauss"
+    },
+    {
+      "project": "ETH",
+      "path": "finite_field_gauss_round8.py",
+      "sha256": "9a8b9c2f205ca76ca7abf8508f429f6889a8de449f85ef3315a30e28bf5bf002",
+      "note": "Artifact symbol: pullback_stabilizer"
+    },
+    {
+      "project": "ETH",
+      "path": "quadratic_batch_counter.py",
+      "sha256": "efb2a93fb553e7f2a46d76f38b9d2caa132529ca831bf815b6252a4acb4ddff7",
+      "note": "Artifact symbol: gauss_sum"
+    },
+    {
+      "project": "ETH",
+      "path": "symbolic_elimination_round6.py",
+      "sha256": "2725aa270dbe0b0a82d7fc440e622eb7ab6e18a6d2d5b9b407e5af9dc32552f7",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Extract the contraction kernel with its field encoding, affine-input conventions, and independent brute-force checks; keep cubic branching as a separately scoped extension.",
+  "relatedIds": [
+    "eth-cert-01",
+    "eth-search-01",
+    "eth-search-02"
+  ],
+  "status": "active",
+  "id": "eth-alg-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

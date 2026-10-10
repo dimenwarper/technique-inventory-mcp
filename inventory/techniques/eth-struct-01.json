@@ -1,0 +1,92 @@
+{
+  "title": "Recover XOR-hidden components and exploit cancellation between them",
+  "summary": "Useful for discovering latent polynomial/tensor structure and for signed partition functions where zeros in transformed local weights remove most global configurations.",
+  "content": "The centroid of a cubic third polar form exposes direct summands hidden by invertible binary coordinate changes; recovery is complete for a scrambled direct sum of three-variable cubic products. Transform lower-degree terms too. For supplied blocks f=sum f_i+q, Fourier support of the quadratic coupling gives cost poly(N)*(2^r+sum_i 2^b_i), where r is its polar rank. A different exact leaf handles connected loopless cubic port graphs: one abc phase per vertex and one xy coupling per edge has gap 2^e+(-2)^v(-1)^e, despite full global coupling rank. Twisted variants use 2-by-2 edge transfers and contract forced implications before enumeration.",
+  "whenToUse": "Useful for discovering latent polynomial/tensor structure and for signed partition functions where zeros in transformed local weights remove most global configurations.",
+  "limitations": "The centroid promise matters; large centroid dimension alone does not guarantee recovery. Lower-degree couplings cannot be discarded. General twists can leave exponential residual enumeration. These are complementary structural leaves, not a general cubic solver.",
+  "tags": [
+    "latent structure",
+    "cubic forms",
+    "Fourier contraction",
+    "partition functions"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "proof",
+    "details": "Scoped structural proofs and integrated prototype; recorded checks inspected.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: STRUCT-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "centroid_factor_round6_notes.txt",
+      "line": 18,
+      "sha256": "d367d21007af9716776c9ece3636215bdf688561650fa9e68e2102a28290bdca"
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_fourier_round7_notes.txt",
+      "line": 9,
+      "sha256": "705416ea08bc189698510434377811501e2723b63eeaeb99f58e16f7c126b76d"
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_obstruction_round7_notes.txt",
+      "line": 17,
+      "sha256": "42ce153d624b860d565cfd85bf6142e71261f2224eea7e1081395fa1d605a2a0"
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_obstruction_round7_notes.txt",
+      "line": 102,
+      "sha256": "42ce153d624b860d565cfd85bf6142e71261f2224eea7e1081395fa1d605a2a0"
+    },
+    {
+      "project": "ETH",
+      "path": "hybrid_contraction_round7.py",
+      "sha256": "df72050ffe18e038995b4d0e2d599506eac58ba9b2498303492e45dfa8fbd612",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "centroid_factor_round6.py",
+      "sha256": "42110b235b46b8776e4fe87292f83804cba13af6c466078bcdef613d51f09c36",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_fourier_round7.py",
+      "sha256": "c6d989e72ecb537ebfe50ccf22e4431b1e1925e0759e9728cc36dcb2ac6221e2",
+      "note": "Artifact symbol: coupling_gap"
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_obstruction_round7.py",
+      "sha256": "a6b0046eb52a1328dfcfcef7cb5b89ca81309cf3eaa7007bff957dda5e7a8167",
+      "note": "Artifact symbol: strict_port_gap"
+    },
+    {
+      "project": "ETH",
+      "path": "coupling_obstruction_round7.py",
+      "sha256": "a6b0046eb52a1328dfcfcef7cb5b89ca81309cf3eaa7007bff957dda5e7a8167",
+      "note": "Artifact symbol: transfer_counter"
+    }
+  ],
+  "nextSteps": "Extract recognition plus contraction as a structural solver portfolio; benchmark each leaf against an explicit small truth table.",
+  "relatedIds": [
+    "eth-meta-01",
+    "eth-tensor-01",
+    "eth-tensor-02"
+  ],
+  "status": "active",
+  "id": "eth-struct-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

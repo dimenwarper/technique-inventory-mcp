@@ -1,0 +1,57 @@
+{
+  "title": "Count restrictions to prove lower bounds despite coefficient cancellation",
+  "summary": "A compact counting proof pattern for sparse signed representations: count restrictions on which each candidate summand can meet a necessary degree condition, rather than counting only its original support.",
+  "content": "Over any odd-characteristic field, representing parity on n Boolean variables as a linear combination of subcube indicators requires at least ceil((3/2)^n) atoms, allowing arbitrary coefficients and cancellation. Count all 3^n partial assignments: restricted parity retains a nonzero top-degree coefficient, while each atom can supply that coefficient on exactly 2^n restrictions.",
+  "whenToUse": "A compact counting proof pattern for sparse signed representations: count restrictions on which each candidate summand can meet a necessary degree condition, rather than counting only its original support.",
+  "limitations": "The atom dictionary is essential. Entangled or otherwise richer atoms are not covered. Project-specific orbit bounds require the explicitly described dictionary transformation.",
+  "tags": [
+    "sparse representations",
+    "polynomial method",
+    "dictionary lower bounds"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "proof",
+    "details": "Written elementary proof; executable companion and saved results inspected.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: LOWER-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "interference_round9.txt",
+      "line": 127,
+      "sha256": "f502c98b7d7a34d7b712ef8f57bd031737d92098586c68c924bd2133e3ae1295"
+    },
+    {
+      "project": "ETH",
+      "path": "ROUND4.txt",
+      "line": 62,
+      "sha256": "2935a4b6bef3c046f56620a425a37e703fb21ea444ac4fe4bf40c80bb6878231"
+    },
+    {
+      "project": "ETH",
+      "path": "interference_round9.py",
+      "sha256": "0ffe4a828b9802c81e3747acc1b9e6f1c0bc0ac8a72a88bd02d329752c786110",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "product_sparse_round6b.py",
+      "sha256": "290fa8751787619be4b7066fcfe8b9bf388e19cbec016217792d226df0c3492d",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Look for other targets and dictionaries with a tractable restriction-capacity count.",
+  "relatedIds": [],
+  "status": "active",
+  "id": "eth-lower-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

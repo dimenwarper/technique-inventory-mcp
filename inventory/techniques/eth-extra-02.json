@@ -1,0 +1,60 @@
+{
+  "title": "Constructive code-projector decompositions and joint residual cancellation",
+  "summary": "Character projectors, weight enumerators, and a checked random-code rule give an exact expected O*(phi^m) decomposition construction in the resource count.",
+  "content": "Character projectors, weight enumerators, and a checked random-code rule give an exact expected O*(phi^m) decomposition construction in the resource count. Saved 14-, 41-, and 947-term identities illustrate cancellation across corrections. Their finite improvements do not establish a better asymptotic rate; lower bounds for uncombined recursion do not cover combined corrections.",
+  "whenToUse": "Constructing exact tensor expansions from binary code projectors and combining residual corrections.",
+  "limitations": "The expected bound is in the resource count. Finite identities do not improve the asymptotic guarantee; an uncombined-recursion lower bound does not cover joint cancellation.",
+  "tags": [
+    "codes",
+    "tensor decompositions",
+    "cancellation"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-02. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-02. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "ROUND3.txt",
+      "line": 52,
+      "sha256": "be827dd49a20018606c79e6de0a3466cf799c95944f4d6a2b547beefcf66907a"
+    },
+    {
+      "project": "ETH",
+      "path": "ROUND4.txt",
+      "line": 17,
+      "sha256": "2935a4b6bef3c046f56620a425a37e703fb21ea444ac4fe4bf40c80bb6878231"
+    },
+    {
+      "project": "ETH",
+      "path": "code_phase_counter.py",
+      "sha256": "323a051f597bf5fe695e33b7f980b3b02cc3038ec3505007ca4e97099b84118a",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "product_cancellation_round4.py",
+      "sha256": "13d7b9a44aefd30faf81fed48133947deeaef1d68271e91f6b9c96b9eb64013a",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-alg-01",
+    "eth-lower-01"
+  ],
+  "status": "active",
+  "id": "eth-extra-02",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

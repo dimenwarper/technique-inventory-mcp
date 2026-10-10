@@ -1,0 +1,30 @@
+{
+  "name": "technique-inventory-mcp",
+  "version": "0.1.0",
+  "description": "A local MCP server for a portable, Git-friendly inventory of techniques and research results.",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22" },
+  "bin": { "technique-inventory-mcp": "dist/cli.js" },
+  "files": ["dist", "README.md", "docs", "examples"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve --data-dir ./inventory",
+    "dev": "node --import tsx src/cli.ts serve --data-dir ./inventory",
+    "test": "npm run build && node --import tsx --test test/*.test.ts",
+    "check": "npm test && node dist/cli.js validate --data-dir ./inventory",
+    "import:eth": "node --import tsx scripts/import-eth.ts",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.3.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

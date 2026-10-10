@@ -1,0 +1,74 @@
+{
+  "title": "Exponential flattening rank can coexist with compact exact contraction",
+  "summary": "A useful result for representation design: low ordinary tensor rank is only one compression mechanism. Look for a compact algebraic class closed under the operations the algorithm needs.",
+  "content": "For invertible d-by-d L, the Gaussian boundary tensor defined by principal Pfaffians of [[0,L],[-L^T,0]] has flattening rank 2^d but an O(d^2)-entry description. Exterior powers of L prove the rank. When the internal skew block C is invertible, the entire boundary contracts to Pf(C) times the Gaussian tensor with matrix E+D^T C^(-1)D, using polynomial field arithmetic.",
+  "whenToUse": "A useful result for representation design: low ordinary tensor rank is only one compression mechanism. Look for a compact algebraic class closed under the operations the algorithm needs.",
+  "limitations": "The prototype's Schur chart requires invertible even-dimensional C. Singular C returns UNSUPPORTED, not zero; a complete implementation needs chart changes. Generic ordinary crossings violate Gaussian closure in the specified ordering and basis.",
+  "tags": [
+    "compression",
+    "tensor networks",
+    "Gaussian closure",
+    "counterexamples"
+  ],
+  "project": "ETH",
+  "kind": "counterexample",
+  "evidence": {
+    "level": "proof",
+    "details": "Written construction and Schur-Pfaffian proof; saved exact verification inspected.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: TENSOR-02. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.txt",
+      "line": 82,
+      "sha256": "fb7f24404f0eeb27bd5d77894e08a96184ef4be64ab4601c714e7f5cdd6b9183"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.txt",
+      "line": 118,
+      "sha256": "fb7f24404f0eeb27bd5d77894e08a96184ef4be64ab4601c714e7f5cdd6b9183"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.txt",
+      "line": 199,
+      "sha256": "fb7f24404f0eeb27bd5d77894e08a96184ef4be64ab4601c714e7f5cdd6b9183"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.py",
+      "sha256": "94a772fff048a18bc662b32d280511bb31da42ed562268ab84aff3e0012f427a",
+      "note": "Artifact symbol: gaussian_eliminate"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.py",
+      "sha256": "94a772fff048a18bc662b32d280511bb31da42ed562268ab84aff3e0012f427a",
+      "note": "Artifact symbol: flatten_signature"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.py",
+      "sha256": "94a772fff048a18bc662b32d280511bb31da42ed562268ab84aff3e0012f427a",
+      "note": "Artifact symbol: four_port_defect"
+    }
+  ],
+  "nextSteps": "Build a small catalog of compact representations and the exact operations under which each remains closed.",
+  "relatedIds": [
+    "eth-meta-01",
+    "eth-struct-01",
+    "eth-tensor-01"
+  ],
+  "status": "active",
+  "id": "eth-tensor-02",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

@@ -1,0 +1,68 @@
+{
+  "title": "An arbitrarily large wire reversal costs at most two Gaussian contractions",
+  "summary": "A concrete example of treating many interactions collectively. It suggests studying permutation sign functions and compact correction dictionaries for tensor contraction or circuit simulation.",
+  "content": "For b reversed wires with occupation weight w, the ordinary-versus-fermionic correction is (-1)^(w(w-1)/2)=((1-i)/2)i^w+((1+i)/2)(-i)^w. Both terms factor into unary weights, which preserve Gaussian tensors through diagonal matrix scaling. Thus all b(b-1)/2 crossings of a reversal require at most two Gaussian contractions, independent of b; a fixed total parity needs only one term.",
+  "whenToUse": "A concrete example of treating many interactions collectively. It suggests studying permutation sign functions and compact correction dictionaries for tensor contraction or circuit simulation.",
+  "limitations": "Odd characteristic and a square root of -1 are required for this displayed formula. General permutations need not be cheap: d disjoint adjacent swaps require 2^d terms in the unary-product correction dictionary by Walsh matrix rank. That lower bound does not cover entangled Gaussian corrections.",
+  "tags": [
+    "tensor networks",
+    "Pfaffians",
+    "fermionic simulation",
+    "collective cancellation"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "experimental",
+    "details": "Exact algebraic identity and contraction implementation; full script rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: crossing_batch_round10.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"reversal_weight_identity_checks\":10001,\"weighted_gaussian_contraction_checks\":120,\"disjoint_swap_ranks\":[{\"disjoint_swaps\":1,\"unary_product_correction_rank\":2},{\"disjoint_swaps\":2,\"unary_product_correction_rank\":4},{\"disjoint_swaps\":3,\"unary_product_correction_rank\":8},{\"disjoint_swaps\":4,\"unary_product_correction_rank\":16},{\"disjoint_swaps\":5,\"unary_product_correction_rank\":32},{\"disjoint_swaps\":6,\"unary_product_correction_rank\":64},{\"disjoint_swaps\":7,\"unary_product_correction_rank\":128}]}. Complete saved result: crossing_batch_round10_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: TENSOR-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "crossing_batch_round10.txt",
+      "line": 7,
+      "sha256": "51f3a0c2009086bae790677f92f1043b8b10d90b2d46ccfb7ac1f12d2d9880f9"
+    },
+    {
+      "project": "ETH",
+      "path": "crossing_batch_round10.py",
+      "line": 60,
+      "sha256": "68eab3096611ed3cc7442b47439f235af7a8965d1642b4c9d63306319a66f8ae"
+    },
+    {
+      "project": "ETH",
+      "path": "crossing_batch_round10.py",
+      "sha256": "68eab3096611ed3cc7442b47439f235af7a8965d1642b4c9d63306319a66f8ae",
+      "note": "Artifact symbol: dot_pfaffian"
+    },
+    {
+      "project": "ETH",
+      "path": "crossing_batch_round10.py",
+      "sha256": "68eab3096611ed3cc7442b47439f235af7a8965d1642b4c9d63306319a66f8ae",
+      "note": "Artifact symbol: pfaffian"
+    },
+    {
+      "project": "ETH",
+      "path": "crossing_batch_round10_results.json",
+      "sha256": "fa1d35e8742597d810aeb22566e7a752d41ee51f9349b640fec98f82bd6b201f",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Study which permutation families admit small exact correction dictionaries, with reversal and disjoint swaps as positive and negative controls.",
+  "relatedIds": [
+    "eth-meta-01",
+    "eth-struct-01",
+    "eth-tensor-02"
+  ],
+  "status": "active",
+  "id": "eth-tensor-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

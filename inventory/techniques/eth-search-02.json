@@ -1,0 +1,92 @@
+{
+  "title": "Complete finite searches with layered pruning and independent coverage audits",
+  "summary": "A template for finite classification, code searches, exact decomposition searches, and replacing costly case splits with short replayable lemmas.",
+  "content": "Enumerate affine supports canonically by RREF and canonical cosets; reduce only by symmetries that preserve the exact question. Apply output invariance, fixed-point vanishing, and empty/singleton-cycle constraints before phases. Solve necessary mod-4/binary phase equations, retain unresolved alternatives, then evaluate exact packets and quotient keys. Save orbit multiplicities, survivor descriptors, positive controls, and original-coordinate witnesses. In one case a small hyperplane/Fourier lemma removes 8,053,063,680 candidates while the full and accelerated runs retain identical 53,865 quotient keys.",
+  "whenToUse": "A template for finite classification, code searches, exact decomposition searches, and replacing costly case splits with short replayable lemmas.",
+  "limitations": "Invariant outputs need not have invariant seeds. A subgroup-preserving change of generators may change the selected norm packets and invalidate symmetry reduction. Sampling validates implementations but does not establish exhaustive coverage. Surviving necessary conditions are not witnesses. The production enumerators have fixed dimensions and specialized encodings.",
+  "tags": [
+    "exhaustive search",
+    "symmetry reduction",
+    "proof certificates",
+    "validation"
+  ],
+  "project": "ETH",
+  "kind": "workflow",
+  "evidence": {
+    "level": "experimental",
+    "details": "Written coverage arguments, completed saved censuses, and independent audits inspected; large searches not rerun here.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: SEARCH-02. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_binary_affine_notes.txt",
+      "line": 30,
+      "sha256": "e355fa9d78865a34116aaf8c465519f4b771956f63b1f92d7353cd1c917f0155"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_support_prune_notes.txt",
+      "line": 26,
+      "sha256": "b891e674b942fa2061a9f3657c4164e27dd69377c0afbedfc86a3cfa9699288b"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_two_orbit_structure_notes.txt",
+      "line": 162,
+      "sha256": "c0931f9174f1d3dd3a4fbfb8c4a2546b67badda8d59e49953ed4acc93c03d1ae"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_enumerate_disjoint_notes.txt",
+      "line": 115,
+      "sha256": "59fe92b0e4537dc08b6dda6460554667322b30c6eefd7c1e466041e070ef5797"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_support_prune_classes.py",
+      "sha256": "abd4a94d98793d4851b89ec988dd34966da8cf83e71d263e20a54b9322f5c509",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_linear_reduce_disjoint.py",
+      "sha256": "d1b9058d94e6fd4ed30cd05929636f46cdbcdb56581b9ae163662c88495a50fc",
+      "note": "Artifact symbol: PhaseSystem"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_enumerate_disjoint.cpp",
+      "sha256": "79e68ccfa45c698a5ff411dac62a25e467dbf1934224fbe0a40149fafd7e2343",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_enumerator_audit.py",
+      "sha256": "3f69714085742d49437afc8438e870e4893cd81cc00f4d497966c27ca7f7df9c",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_dim5_geometry_validate.py",
+      "sha256": "500a2a4b9c2f208533a5469cf93e8868e09cdfa930bc199b794209d356662d57",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Extract a search-certificate schema and small independent replay tool before generalizing the specialized enumerators.",
+  "relatedIds": [
+    "eth-alg-01",
+    "eth-cert-01",
+    "eth-search-01"
+  ],
+  "status": "active",
+  "id": "eth-search-02",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

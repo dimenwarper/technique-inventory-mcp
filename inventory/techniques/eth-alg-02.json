@@ -1,0 +1,69 @@
+{
+  "title": "A nonzero group norm certifies independence of the entire orbit",
+  "summary": "An exact independence certificate in modular representation theory and a reusable counterexample to importing positive-definite Gram-matrix intuition into finite fields.",
+  "content": "For any linear action of H=(C3)^r over any characteristic-three field, N_H v is nonzero if and only if all 3^r orbit vectors h v are linearly independent. The proof uses K[H]=K[z_1,...,z_r]/(z_i^3): every nonzero ideal contains product z_i^2=N_H. For the project's particular block action, rank(N_H)=sum over spanning column subsets S of 3^(|S|-r), with minimum 4^(m-r) exactly for coordinate subgroups. A tensor family has orbit dimension 3^k but Hermitian Gram rank one.",
+  "whenToUse": "An exact independence certificate in modular representation theory and a reusable counterexample to importing positive-definite Gram-matrix intuition into finite fields.",
+  "limitations": "The independence theorem is general for the stated group/characteristic, while the rank formula is action-specific. Incompressibility inside one orbit does not exclude other dictionaries or implicit evaluation. Enumerating column subsets still costs exponentially in m.",
+  "tags": [
+    "representation theory",
+    "group algebras",
+    "finite-field linear algebra"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "proof",
+    "details": "Self-contained written proof; full exact probe rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: continuation_phased_orbit_module.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"exhaustive_nonzero_two_generator_F3_ideal_checks\":19682,\"exhaustive_one_block_F9_vectors\":6561,\"all_subgroups_checked_through_four_blocks\":248,\"paired_Bell_successes_and_Gram_counterexamples\":[{\"blocks\":2,\"subgroup_rank\":1,\"orbit_span_dimension\":3,\"hermitian_gram_rank\":1,\"norm_is_target\":true},{\"blocks\":4,\"subgroup_rank\":2,\"orbit_span_dimension\":9,\"hermitian_gram_rank\":1,\"norm_is_target\":true},{\"blocks\":6,\"subgroup_rank\":3,\"orbit_span_dimension\":27,\"hermitian_gram_rank\":1,\"norm_is_target\":true}]}. Complete saved result: continuation_phased_orbit_module_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: ALG-02. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.txt",
+      "line": 24,
+      "sha256": "11cd6a6b407560245565d2a6bde670b7f5502931bc417f20bcf33b8d83937e99"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.txt",
+      "line": 75,
+      "sha256": "11cd6a6b407560245565d2a6bde670b7f5502931bc417f20bcf33b8d83937e99"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.txt",
+      "line": 146,
+      "sha256": "11cd6a6b407560245565d2a6bde670b7f5502931bc417f20bcf33b8d83937e99"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.py",
+      "sha256": "087bc30b5b082838133fafbb2242c283eedb5b2da4cc1bcc6f94e7945658bdda",
+      "note": "Artifact symbol: field_rank"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.py",
+      "sha256": "087bc30b5b082838133fafbb2242c283eedb5b2da4cc1bcc6f94e7945658bdda",
+      "note": "Artifact symbol: norm_rank_formula"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_phased_orbit_module.py",
+      "sha256": "087bc30b5b082838133fafbb2242c283eedb5b2da4cc1bcc6f94e7945658bdda",
+      "note": "Artifact symbol: gaussian_gram"
+    }
+  ],
+  "nextSteps": "Write this as a standalone algebra result with the Gram-rank counterexample as a regression case.",
+  "relatedIds": [],
+  "status": "active",
+  "id": "eth-alg-02",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

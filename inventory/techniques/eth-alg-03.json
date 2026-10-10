@@ -1,0 +1,57 @@
+{
+  "title": "Use fixed points to obstruct affine-supported norm images",
+  "summary": "A short symmetry-plus-support certificate can prune decomposition searches before any coefficient or phase search.",
+  "content": "Let T be a binary-linear order-three action on labels, with amplitude field of characteristic three. Every nonempty invariant binary-affine support contains a fixed point: x+Tx+T^2x remains in the affine support and is fixed. But the image of I+T+T^2 is invariant and vanishes on fixed labels. Therefore that image contains no nonzero vector whose support is binary affine. The same reasoning excludes the project's norm-plus-one-affine-atom construction, even for an arbitrary seed.",
+  "whenToUse": "A short symmetry-plus-support certificate can prune decomposition searches before any coefficient or phase search.",
+  "limitations": "Sums of two residual atoms may not have affine support. Multiple norm packets require a common nonzero direction for this argument. Do not confuse symmetry of an output with symmetry of each input seed.",
+  "tags": [
+    "symmetry",
+    "support geometry",
+    "impossibility certificates"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "proof",
+    "details": "Written proof with saved exhaustive small-case checks; not rerun here.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: ALG-03. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_interference_fixedpoint.txt",
+      "line": 24,
+      "sha256": "13fa8bb29a5e50c6b376d06a88e416686e79a0dfea9165af87089ee6d53a3617"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_interference_fixedpoint.txt",
+      "line": 45,
+      "sha256": "13fa8bb29a5e50c6b376d06a88e416686e79a0dfea9165af87089ee6d53a3617"
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_interference_fixedpoint.py",
+      "sha256": "4fd32e31d4560bfe4dad886488ec24f1129caffe57ee94b189afe85c2ea0c060",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "continuation_interference_fixedpoint_results.json",
+      "sha256": "b0b3a5e395e66f6e2a6449aad435cbe4544b3dc19816fc86fe598d080192264d",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Look for analogous support families forced to meet fixed loci of the relevant group action.",
+  "relatedIds": [],
+  "status": "active",
+  "id": "eth-alg-03",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

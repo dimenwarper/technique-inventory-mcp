@@ -1,0 +1,67 @@
+{
+  "title": "Find two-term representations by quotient dictionaries",
+  "summary": "Replaces an all-pairs loop with one pass of exact dictionary insertions, plus vector normalization/key costs. Applies directly to finite-field coding searches, sparse decompositions, and any explicit dictionary over a field.",
+  "content": "Given nonzero target T, choose a linear functional c with c(T)=1 and set q(v)=v-c(v)T. Normalize each nonzero q(v) to a canonical projective key, scaling c(v) by the same factor. Two proper vectors span T exactly when their quotient keys match and their scaled anchor values differ. If the normalizers are lambda_v, lambda_w and the anchor difference is D, the witness is T=(lambda_v/D)v-(lambda_w/D)w. Handle q=0 separately: a nonzero anchor is a one-term hit; zero anchor is the zero vector.",
+  "whenToUse": "Replaces an all-pairs loop with one pass of exact dictionary insertions, plus vector normalization/key costs. Applies directly to finite-field coding searches, sparse decompositions, and any explicit dictionary over a field.",
+  "limitations": "Matching quotient keys alone is insufficient. Preserve target-coordinate deviations even when off-target coordinates vanish. Hash collisions must be resolved by exact quotient-key comparison or reconstruction, retaining unequal keys separately; replay recovered witnesses on original coordinates. Expected linear dictionary operations do not remove candidate-generation, vector-size, or memory costs. The general-target statement is the same elementary argument; production code specializes field and target encodings.",
+  "tags": [
+    "exact search",
+    "finite fields",
+    "sparse representations"
+  ],
+  "project": "ETH",
+  "kind": "technique",
+  "evidence": {
+    "level": "proof",
+    "details": "Written proof, implemented matcher, exhaustive independent finite audit; audit rerun in this survey.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library.\n\nRecorded survey replay: attack_phase_constraints_quotient_audit.py; status PASS; matches saved result excluding timing: true. Verification summary: {\"vectors\":729,\"ordered_pairs\":531441,\"pairs_spanning_target\":57680}. Complete saved result: attack_phase_constraints_quotient_audit_results.json."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: SEARCH-01. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_quotient_audit_notes.txt",
+      "line": 4,
+      "sha256": "2d68713303664795e97b368c7d6afd34ddbb125b63d856aa1184bf94f11e4a21"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_enumerator_audit_notes.txt",
+      "line": 85,
+      "sha256": "9d294a654a8930254621125feb409ecb913dddd3afa982bf8a09e1edd9b676a0"
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_constraints_quotient_audit.py",
+      "sha256": "b7c88e373bcc2361b7cec6c6d66bf8ec4f56a37d0bcf893ed85f2ca954c1e13d",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "attack_phase_enumerate_disjoint.cpp",
+      "sha256": "79e68ccfa45c698a5ff411dac62a25e467dbf1934224fbe0a40149fafd7e2343",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    },
+    {
+      "project": "ETH",
+      "path": "orbit_interference_round9.py",
+      "sha256": "61523ae7161d28e27882f69808754b984a5b4cd65e36647deb0c2a5f305629b2",
+      "note": "Implementation or saved-result artifact; source content is not bundled."
+    }
+  ],
+  "nextSteps": "Extract a field-agnostic two_term_span_search with explicit coefficient reconstruction and the existing exhaustive F9^3 audit.",
+  "relatedIds": [
+    "eth-alg-01",
+    "eth-cert-01",
+    "eth-search-02"
+  ],
+  "status": "active",
+  "id": "eth-search-01",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}

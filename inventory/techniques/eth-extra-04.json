@@ -1,0 +1,54 @@
+{
+  "title": "Exact renormalization on a recursively assembled bounded interface",
+  "summary": "A triangular NAE gasket reduces to A'=A^3+3AB^2+4B^3 and B'=A^2B+4AB^2+3B^3, with (A0,B0)=(0,1).",
+  "content": "A triangular NAE gasket reduces to A'=A^3+3AB^2+4B^3 and B'=A^2B+4AB^2+3B^3, with (A0,B0)=(0,1). Modulo three this becomes A'=(A+B)^3, B'=AB(A+B). A useful benchmark for exact recursive contraction; bounded interface gives tractability, while identical subproblems save repeated work.",
+  "whenToUse": "Benchmarking exact contraction on recursively assembled networks with a fixed boundary.",
+  "limitations": "The displayed recurrence belongs to the triangular NAE gasket and its stated boundary convention. It does not provide a recurrence for arbitrary networks.",
+  "tags": [
+    "renormalization",
+    "bounded interfaces",
+    "recursive contraction"
+  ],
+  "project": "ETH",
+  "kind": "result",
+  "evidence": {
+    "level": "unassessed",
+    "details": "Imported additional note EXTRA-04. The source catalog did not assign this note a separate evidence assessment; assertions and qualifications are preserved in its content.\n\nWritten proof means a proof is present in the project and was reviewed for this survey; it does not imply formal verification or established literature novelty. Proposed uses outside this project are transfer suggestions, not demonstrated applications. Scripts are working research prototypes with cross-file imports, not a standalone library."
+  },
+  "sources": [
+    {
+      "project": "ETH",
+      "path": "inventory/catalog.json",
+      "sha256": "1371d37ce8d49db9f6c2bf849422e2f07eba617423f098183b55bd6224345983",
+      "note": "Imported origin ID: EXTRA-04. Source catalog path is relative to the original ETH project."
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.txt",
+      "line": 16,
+      "sha256": "fb7f24404f0eeb27bd5d77894e08a96184ef4be64ab4601c714e7f5cdd6b9183"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.py",
+      "sha256": "94a772fff048a18bc662b32d280511bb31da42ed562268ab84aff3e0012f427a",
+      "note": "Artifact symbol: gasket_step"
+    },
+    {
+      "project": "ETH",
+      "path": "fractal_round10.py",
+      "sha256": "94a772fff048a18bc662b32d280511bb31da42ed562268ab84aff3e0012f427a",
+      "note": "Artifact symbol: symmetric_step"
+    }
+  ],
+  "nextSteps": "Review the cited assumptions and independent checks before extracting a reusable implementation or extending the stated result.",
+  "relatedIds": [
+    "eth-tensor-02",
+    "eth-struct-01"
+  ],
+  "status": "active",
+  "id": "eth-extra-04",
+  "createdAt": "2026-10-09T00:00:00.000Z",
+  "updatedAt": "2026-10-09T00:00:00.000Z",
+  "revision": 1
+}
